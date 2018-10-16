@@ -1,0 +1,95 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+body{
+	color:#444444;
+	background: #f2f2f2;
+}
+h1{
+    font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+	font-size:36px;
+	font-weight:normal;
+    margin-bottom:15px;
+    margin-top: 60px;
+}
+h2{
+    font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+    font-size:36px;
+    font-weight: bold;
+}
+#main{
+	margin:15px auto;
+	text-align:center;
+	width:920px;
+	position:relative;
+}
+.window{
+  width: 920px;
+  height: 400px;
+  margin: 60px auto;
+  overflow: hidden;
+  margin-bottom: 0;
+  box-shadow: 0 0 3px #AAAAAA;
+  background:url(img/panel.jpg) repeat-x bottom center #ffffff;
+}
+.images{
+  display: flex;
+  align-items: flex-start;
+  transition: all 0.3s;
+}
+.images > img{
+  width: 100%;
+  top: 0;
+}
+
+#menu{
+    margin-top: 1px;
+    height:45px;
+    background: linear-gradient(to bottom, #f9f9f9 0%,#f2f2f2 50%,#f3f3f3 51%,#ececec 100%);
+    box-shadow: 0 0 3px #AAAAAA;
+}
+ul{
+	margin:0px;
+    padding:0px;
+    text-align: center;
+}
+li{
+	width:60px;
+	display:inline-block;
+	list-style:none;
+	height:45px;
+    overflow:hidden;
+    padding-top: 0px;
+}
+
+li.inact:hover{
+	/* The inactive state, highlighted on mouse over */
+	background:url(./img/pic_bg.png) repeat;
+}
+li.act,li.act:hover{
+	/* The active state of the thumb */
+	background:url(./img/active_bg.png) no-repeat;
+}
+li.act a{
+	cursor:default;
+}
+.fbar{
+	/* The left-most vertical bar, next to the first thumbnail */
+	width:2px;
+	background:url(./img/panel.jpg) no-repeat right;
+}
+li a{
+	display:block;
+	background:url(./img/divider.png) no-repeat right;
+	height:35px;
+	padding-top:10px;
+}
+a img{
+	border:none;
+}
+a, a:visited {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+a:hover{
+	text-decoration:underline;
+}
